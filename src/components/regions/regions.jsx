@@ -16,7 +16,6 @@ const Regions = () => {
     const [hoennPokemon, setHoennPokemon] = useState([]);
     const [sinnohPokemon, setSinnohPokemon] = useState([]);
     const [unovaPokemon, setUnovaPokemon] = useState([]);
-    
     const [pokemonNames, setPokemonNames] = useState([]);
     
     useEffect(() => {

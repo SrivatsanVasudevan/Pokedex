@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import PokeCards from '../pokecards/pokecards';
 import axios from 'axios';
+import './regionpokemon.scss'
 
 const RegionPokemon = ({pokemon}) => {
 
@@ -73,8 +74,8 @@ const RegionPokemon = ({pokemon}) => {
     }
     
     return (
-        <div>
-            <select style = {{width: 100}} name = 'regions' id = 'regions' onChange = {setNames}>
+        <div style = {{fontFamily:'Iceland', fontSize:24}} className = 'dropdownSpaces'>
+            <select style = {{width: 100, margin: 30}} name = 'regions' id = 'regions' onChange = {setNames}>
                 <option value = '' >Kanto</option>
                 {kantoPokemon.map((option,index) => 
                 <option 
@@ -82,7 +83,7 @@ const RegionPokemon = ({pokemon}) => {
                 </option>)
                 }
             </select>
-            <select style = {{width: 100}} name = 'regions' id = 'regions' onChange = {setNames}>
+            <select style = {{width: 100, margin: 30}} name = 'regions' id = 'regions' onChange = {setNames}>
                 <option value = '' >Johto</option>
                 {johtoPokemon.map((option,index) => {
                     return (
@@ -92,7 +93,7 @@ const RegionPokemon = ({pokemon}) => {
                     );
                 })}
             </select>
-            <select style = {{width: 100}} name = 'regions' id = 'regions' onChange = {setNames}>
+            <select style = {{width: 100, margin: 30}} name = 'regions' id = 'regions' onChange = {setNames}>
                 <option value = '' >Hoenn</option>
                 {hoennPokemon.map((option,index)=> {
                     return (
@@ -102,7 +103,7 @@ const RegionPokemon = ({pokemon}) => {
                     );
                 })}
             </select>
-            <select style = {{width: 100}} name = 'regions' id = 'regions' onChange = {setNames}>
+            <select style = {{width: 100, margin: 30}} name = 'regions' id = 'regions' onChange = {setNames}>
                 <option value = '' >Sinnoh</option>
                 {sinnohPokemon.map((option,index)=> {
                     return (
@@ -112,7 +113,7 @@ const RegionPokemon = ({pokemon}) => {
                     );
                 })}
             </select>
-            <select style = {{width: 100}} name = 'regions' id = 'regions' onChange = {setNames}>
+            <select style = {{width: 100, margin: 30}} name = 'regions' id = 'regions' onChange = {setNames}>
                 <option value = '' >Unova</option>
                 {unovaPokemon.map((option,index)=> {
                     return (

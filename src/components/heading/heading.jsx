@@ -2,7 +2,7 @@ import React from 'react';
 
 const Heading = () => {
     return(
-        <div>
+        <div style = {{fontFamily:'Iceland', fontSize:40}}>
             PokeDex
             <div>
                 Gotta catch-em all!

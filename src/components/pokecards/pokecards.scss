@@ -1,0 +1,16 @@
+.pokemonImages{
+    border: 0px solid black;
+    border-radius: 10px;
+    background-color: blue;
+    margin:10px;
+    
+
+    &:hover{
+        cursor:pointer;
+        transform: scale(1.3);
+    }
+}
+
+.moves{
+    float:left;
+}
